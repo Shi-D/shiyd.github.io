@@ -4,11 +4,11 @@
 
 ## CNN基础
 
-**edge detection**
+#### **edge detection**
 
-<img src="/book/#/doc/DeepLearning/resources/4.png" alt="4" style="zoom:50%;" />
+<img src="/book/doc/DeepLearning/resources/4.png" alt="4" style="zoom:50%;" />
 
-**Padding**
+#### **Padding**
 
 用padding进行填充以避免图像边缘像素点的丢失.
 
@@ -32,11 +32,11 @@ Valid Convolutions: `n x n * f x f` -> `(n - f + 1) x (n - f + 1)`
 
 Same Convolutions: `p = (f-1)/2` -> `n x n`
 
-**Strided Convolutions(卷积步长)**
+#### **Strided Convolutions(卷积步长)**
 
 s表示卷积步长，则若使用Same Convolutions，输出为 `(n+2p-f)/s+1`
 
-**Layers**
+#### **Layers**
 
 * Convolutions
 
