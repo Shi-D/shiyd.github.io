@@ -36,10 +36,7 @@
     * [双向绑定](/doc/VUE/双向绑定)
 
 * **DeepLearning**
-
-  - [Basics](/doc/Deeplearning/DeepLearning-Basics)
-
-  - [Shallow neural networks ](/doc/Deeplearning/DeepLearning-Shallow_neural_networks)
-
-  - [CNN](/doc/DeepLearning/DeepLearning-CNN)
+    * [Basics](/doc/Deeplearning/DeepLearning-Basics)
+    * [Shallow neural networks ](/doc/Deeplearning/DeepLearning-Shallow_neural_networks)
+    * [CNN](/doc/DeepLearning/DeepLearning-CNN)
 
