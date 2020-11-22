@@ -6,7 +6,7 @@
 
 **edge detection**
 
-<img src="/Users/shiyingdan/GitHub/Shi-D.github.io/book/doc/DeepLearning/resources/4.png" alt="4" style="zoom:50%;" />
+<img src="。。/resources/4.png" alt="4" style="zoom:50%;" />
 
 **Padding**
 
