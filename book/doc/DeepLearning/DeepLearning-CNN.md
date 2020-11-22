@@ -6,7 +6,7 @@
 
 **edge detection**
 
-<img src="/#/doc/DeepLearning/resources/4.png" alt="4" style="zoom:50%;" />
+<img src="/book/#/doc/DeepLearning/resources/4.png" alt="4" style="zoom:50%;" />
 
 **Padding**
 
