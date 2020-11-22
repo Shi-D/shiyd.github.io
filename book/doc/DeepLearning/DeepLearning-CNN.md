@@ -6,7 +6,7 @@
 
 **edge detection**
 
-<img src="。。/resources/4.png" alt="4" style="zoom:50%;" />
+<img src="../resources/4.png" alt="4" style="zoom:50%;" />
 
 **Padding**
 
