@@ -39,12 +39,9 @@ s表示卷积步长，则若使用Same Convolutions，输出为 `(n+2p-f)/s+1`
 #### **Layers**
 
 * Convolutions
-
- - Pooling layers 池化层
-
-   - 最大池化层
-
-   - 平均池化层
+* Pooling layers 池化层
+  - 最大池化层
+  - 平均池化层
 
 - Fully Connected（FC）全连接层
 
