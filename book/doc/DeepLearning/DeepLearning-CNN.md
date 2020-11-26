@@ -91,11 +91,11 @@ s表示卷积步长，则若使用Same Convolutions，输出为 `(n+2p-f)/s+1`
 
 **Inception Module**
 
-<img src="/book/doc/DeepLearning/resources/Inception_Module.png" alt="Inception_Module" style="zoom:60%;"/>
+<img src="/book/doc/DeepLearning/resources/inception_module.PNG" alt="Inception_Module" style="zoom:60%;"/>
 
 **Inception Network**
 
-<img src="/book/doc/DeepLearning/resources/Inception_Network.png" alt="Inception_Network" style="zoom:60%;"/>
+<img src="/book/doc/DeepLearning/resources/inception_network.PNG" alt="Inception_Network" style="zoom:60%;"/>
 
 #### 迁移学习
 
@@ -107,7 +107,7 @@ s表示卷积步长，则若使用Same Convolutions，输出为 `(n+2p-f)/s+1`
 
 通过使用其他人预训练的权重，即使只有一个小的数据集，也有很大可能可以得到很好的性能。幸运的是，大多数深度学习框架都支持这种操作，事实上，取决于用的框架，它也许会有`trainableParameter=0`这样的参数，对于这些前面的层，可能会需要设置这个参数。为了不训练这些权重，有时也会有`freeze=1`这样的参数。不同的深度学习编程框架有不同的方式，允许你指定是否训练特定层的权重。在这个例子中，你只需要训练**softmax**层的权重，把前面这些层的权重都冻结即可。
 
-<img src="/book/doc/DeepLearning/resources/onebyone.png" alt="Transfer_Learning" style="zoom:60%;"/>
+<img src="/book/doc/DeepLearning/resources/Transfer_Learning.png" alt="Transfer_Learning" style="zoom:60%;"/>
 
 另一个技巧，也许对一些情况有用，由于前面的层都冻结了，相当于一个固定的函数，不需要改变。因为你不需要改变它，也不训练它，取输入图像，然后把它映射到这层（**softmax**的前一层）的激活函数。所以这个能加速训练的技巧就是，如果我们先计算这一层（紫色箭头标记），计算特征或者激活值，然后把它们存到硬盘里。你所做的就是用这个固定的函数，在这个神经网络的前半部分（**softmax**层之前的所有层视为一个固定映射），取任意输入图像，然后计算它的某个特征向量，这样你训练的就是一个很浅的**softmax**模型，用这个特征向量来做预测。对你的计算有用的一步就是对你的训练集中所有样本的这一层的激活值进行预计算，然后存储到硬盘里，然后在此之上训练**softmax**分类器。所以，存储到硬盘或者说预计算方法的优点就是，你不需要每次遍历训练集再重新计算这个激活值了。
 
