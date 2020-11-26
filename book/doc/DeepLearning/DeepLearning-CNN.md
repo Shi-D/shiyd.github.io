@@ -91,11 +91,11 @@ s表示卷积步长，则若使用Same Convolutions，输出为 `(n+2p-f)/s+1`
 
 **Inception Module**
 
-<img src="/book/doc/DeepLearning/resources/onebyone.png" alt="Inception_Module" style="zoom:60%;"/>
+<img src="/book/doc/DeepLearning/resources/Inception_Module.png" alt="Inception_Module" style="zoom:60%;"/>
 
 **Inception Network**
 
-<img src="/book/doc/DeepLearning/resources/onebyone.png" alt="Inception Network" style="zoom:60%;"/>
+<img src="/book/doc/DeepLearning/resources/Inception_Network.png" alt="Inception_Network" style="zoom:60%;"/>
 
 #### 迁移学习
 
