@@ -8,7 +8,7 @@
 
 **Activation functions**
 
-<img src="/book/doc/DeepLearning/resources/2.png" alt="4" style="zoom:80%;" />
+<img src="/book/doc/DeepLearning/resources/2.png" alt="4" style="zoom:30%;" />
 
 **Random Initialization**
 
