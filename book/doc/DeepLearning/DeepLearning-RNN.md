@@ -4,6 +4,21 @@
 
 
 
+## Simple RNN
+
+神经网络训练过程中的两大问题是
+
+* gradient vanishing梯度消失
+* gradient explode梯度爆炸
+
+而对于Simple RNN来说，最大的问题是梯度消失。
+
+解决方法：
+
+GRU、LSTM
+
+
+
 ## Long Short-Term Memory (LSTM) network
 
 This following figure shows the operations of an LSTM-cell.
@@ -11,6 +26,14 @@ This following figure shows the operations of an LSTM-cell.
 <img src="/book/doc/DeepLearning/resources/LSTM.png" alt="4" style="zoom:50%;" />
 
 LSTM-cell above. This tracks and updates a “cell state” or memory variable c^<t>^ at every time-step, which can be different from a^⟨t⟩^. Similar to the RNN example above, you will start by implementing the LSTM cell for a single time-step. Then you can iteratively call it from inside a for-loop to have it process an input with T~x~ time-steps.
+
+
+
+## About the gates
+
+<img src="/book/doc/DeepLearning/resources/lstm2.png" alt="4" style="zoom:50%;" />
+
+<img src="/book/doc/DeepLearning/resources/lstm1.png" alt="4" style="zoom:50%;" />
 
 
 
@@ -65,7 +88,25 @@ Where in equation 6 you decide what to output using a sigmoid function and in eq
 
 
 
+## Forward pass for LSTM
+
+<img src="/book/doc/DeepLearning/resources/forwardpass.png" alt="forwardpass" style="zoom:50%;" />
 
 
-参考资料：https://www.deeplearning.ai/
+
+## Back Propagation
+
+<img src="/book/doc/DeepLearning/resources/backpropogation.png" alt="backpropogation" style="zoom:50%;" />
+
+
+
+
+
+
+
+
+
+*我用的展示markdown的框架不能显示内联公式，正在解决中...
+
+*参考资料：https://www.deeplearning.ai/
 
