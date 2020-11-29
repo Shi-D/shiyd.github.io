@@ -8,8 +8,8 @@
 
 神经网络训练过程中的两大问题是
 
-* gradient vanishing梯度消失
-* gradient explode梯度爆炸
+* gradient vanishing (梯度消失)
+* gradient explode (梯度爆炸)
 
 而对于Simple RNN来说，最大的问题是梯度消失。
 
@@ -23,21 +23,21 @@ GRU、LSTM
 
 This following figure shows the operations of an LSTM-cell.
 
-<img src="/book/doc/DeepLearning/resources/LSTM.png" alt="4" style="zoom:50%;" />
+<img src="/book/doc/DeepLearning/resources/LSTM.png" alt="4" style="zoom:30%;" />
 
 LSTM-cell above. This tracks and updates a “cell state” or memory variable c^<t>^ at every time-step, which can be different from a^⟨t⟩^. Similar to the RNN example above, you will start by implementing the LSTM cell for a single time-step. Then you can iteratively call it from inside a for-loop to have it process an input with T~x~ time-steps.
 
 
 
-## About the gates
+### About the gates
 
-<img src="/book/doc/DeepLearning/resources/lstm2.png" alt="4" style="zoom:50%;" />
+<img src="/book/doc/DeepLearning/resources/lstm2.png" alt="4" style="zoom:30%;" />
 
-<img src="/book/doc/DeepLearning/resources/lstm1.png" alt="4" style="zoom:50%;" />
+<img src="/book/doc/DeepLearning/resources/lstm1.png" alt="4" style="zoom:30%;" />
 
 
 
-### - Forget gate
+#### - Forget gate
 
 For the sake of this illustration, lets assume we are reading words in a piece of text, and want use an LSTM to keep track of grammatical structures, such as whether the subject is singular or plural. If the subject changes from a singular word to a plural word, we need to find a way to get rid of our previously stored memory value of the singular/plural state. In an LSTM, the forget gate lets us do this:
 $$
@@ -47,7 +47,7 @@ Here, WfWf are weights that govern the forget gate’s behavior. We concatenate 
 
 
 
-### - Update gate
+#### - Update gate
 
 Once we forget that the subject being discussed is singular, we need to find a way to update it to reflect that the new subject is now plural. Here is the formulat for the update gate:
 $$
@@ -57,7 +57,7 @@ Similar to the forget gate, here $$Γ^{⟨t⟩}_u$$ is again a vector of values 
 
 
 
-### - Updating the cell
+#### - Updating the cell
 
 To update the new subject we need to create a new vector of numbers that we can add to our previous cell state. The equation we use is:
 $$
@@ -73,7 +73,7 @@ c^{⟨t⟩}=Γ^{⟨t⟩}_f∗c^{⟨t−1⟩}+Γ^{⟨t⟩}_u∗\widetilde{c}{⟨t
 $$
 
 
-### - Output gate
+#### - Output gate
 
 To decide which outputs we will use, we will use the following two formulas:
 $$
@@ -88,13 +88,13 @@ Where in equation 6 you decide what to output using a sigmoid function and in eq
 
 
 
-## Forward pass for LSTM
+### Forward pass for LSTM
 
 <img src="/book/doc/DeepLearning/resources/forwardpass.png" alt="forwardpass" style="zoom:50%;" />
 
 
 
-## Back Propagation
+### Back Propagation
 
 <img src="/book/doc/DeepLearning/resources/backpropogation.png" alt="backpropogation" style="zoom:50%;" />
 
