@@ -31,9 +31,9 @@ LSTM-cell above. This tracks and updates a “cell state” or memory variable c
 
 ### About the gates
 
-<img src="/book/doc/DeepLearning/resources/lstm2.png" alt="4" style="zoom:30%;" />
+<img src="/book/doc/DeepLearning/resources/lstm2.png" alt="4" style="zoom:20%;" />
 
-<img src="/book/doc/DeepLearning/resources/lstm1.png" alt="4" style="zoom:30%;" />
+<img src="/book/doc/DeepLearning/resources/lstm1.png" alt="4" style="zoom:20%;" />
 
 
 
