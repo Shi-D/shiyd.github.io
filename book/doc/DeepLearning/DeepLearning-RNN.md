@@ -96,7 +96,7 @@ Where in equation 6 you decide what to output using a sigmoid function and in eq
 
 ### Back Propagation
 
-<img src="/book/doc/DeepLearning/resources/backpropogation.png" alt="backpropogation" style="zoom:50%;" />
+<img src="/book/doc/DeepLearning/resources/backpropogation.png" alt="backpropogation" style="zoom:30%;" />
 
 
 
