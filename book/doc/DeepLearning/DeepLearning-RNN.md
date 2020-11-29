@@ -11,11 +11,7 @@
 * gradient vanishing (梯度消失)
 * gradient explode (梯度爆炸)
 
-而对于Simple RNN来说，最大的问题是梯度消失。
-
-解决方法：
-
-GRU、LSTM
+而对于Simple RNN来说，最大的问题是梯度消失.
 
 
 
