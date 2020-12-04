@@ -1,3 +1,5 @@
+[TOC]
+
 # class 1
 
 PyTorch是一个基于Python的科学计算库，它有以下特点:
@@ -762,3 +764,9 @@ In [ ]:
 print(np.sum(testY.max(1)[1].numpy() == np.array([fizz_buzz_encode(i) for i in range(1,101)])))
 testY.max(1)[1].numpy() == np.array([fizz_buzz_encode(i) for i in range(1,101)])
 ```
+
+
+
+
+
+[参考](https://pytorch.org/tutorials/beginner/pytorch_with_examples.html)
