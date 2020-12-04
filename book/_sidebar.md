@@ -30,16 +30,19 @@
     * [HTTP报文](/doc/HTTP/HTTP-报文)
     * [三次握手-四次挥手](/doc/HTTP/三次握手-四次挥手)
 * **NodeJs**
-    
+  
     * [webpack基础](/doc/NodeJs/nodejs-webpack)
 * **VUE**
     * [生命周期](/doc/VUE/生命周期)
     * [双向绑定](/doc/VUE/双向绑定)
 
 * **DeepLearning**
+    
     * [Basics](/doc/DeepLearning/DeepLearning-Basics)
     * [Shallow neural networks ](/doc/DeepLearning/DeepLearning-Shallow_neural_networks)
     * [CNN](/doc/DeepLearning/DeepLearning-CNN)
     
     - [RNN](/doc/DeepLearning/DeepLearning-RNN)
 
+* **Pytorch**
+  - [Class1](/doc/Pytorch/class1)
