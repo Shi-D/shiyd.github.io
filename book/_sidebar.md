@@ -47,3 +47,7 @@
 * **Pytorch**
   - [Class1](/doc/Pytorch/class1)
   - [Class2](/doc/Pytorch/class2)
+
+* **PythonTricks**
+  - [Tricks](/doc/PythonTricks/Python_tricks)
+
