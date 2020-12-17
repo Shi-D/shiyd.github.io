@@ -1,4 +1,5 @@
 * **JavaScript**
+    
     * [ajax](/doc/JavaScript/JavaScript-ajax)
     * [new一个对象发生了什么](/doc/JavaScript/JavaScript-new一个对象发生了什么)
     * [this指向问题](/doc/JavaScript/JavaScript-this指向问题)
@@ -50,5 +51,5 @@
   - [一些Tricks](/doc/Pytorch/class3)
 
 * **PythonTricks**
-  - [Tricks](/doc/PythonTricks/Python_tricks)
+  - [Tricks](/doc/PythonTricks/Python-tricks)
 
