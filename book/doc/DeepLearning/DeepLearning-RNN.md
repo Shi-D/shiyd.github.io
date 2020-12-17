@@ -102,7 +102,7 @@ Where in equation 6 you decide what to output using a sigmoid function and in eq
 
 
 
-*我用的展示markdown的框架不能显示内联公式，正在解决中...
+*~~内联公式无法显示，正在解决中...~~      解决不了，GitHub不支持LaTex
 
 *参考资料：https://www.deeplearning.ai/
 
