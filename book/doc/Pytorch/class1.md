@@ -1,6 +1,6 @@
 [TOC]
 
-# class 1
+# Pytorch基础
 
 PyTorch是一个基于Python的科学计算库，它有以下特点:
 
