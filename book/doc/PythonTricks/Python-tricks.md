@@ -6,7 +6,7 @@
 
 # Python的一些小tricks
 
-## 数据处理
+## numpy数据处理
 
 #### np.c、np.r_
 
@@ -126,6 +126,16 @@ for i, j in c:
 
 
 
+#### Counter计数
+
+对列表内的元素进行统计，得到元组列表
+
+most_common()将数量从大到小排
+
+```
+Counter(flat_map).most_common()[0][0]
+```
+
 ## matplotlib绘图
 
 #### cmap取值
@@ -166,6 +176,32 @@ plt.contourf(xx, yy, Z, cmap='RdYlGn')
 #绘制散点图做比对
 plt.scatter(x_train[:, 0], x_train[:, 1], c=y_train.squeeze(), cmap='RdYlGn')
 ```
+
+
+
+## Pandas数据处理
+
+#### 读csv文件
+
+```
+G = pd.read_csv('../data/facebook')
+```
+
+#### 读取某一列
+
+```
+G['source']
+```
+
+#### loc()函数
+
+```
+g = G.copy().loc[np.random.uniform(0, 1, G.shape[0]) < p]  # 获取子图
+
+temp = g.loc[g['target'].isin(new_nodes)]  #获取target那一列的value在new_nodes中的节点
+```
+
+
 
 
 
