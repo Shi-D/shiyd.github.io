@@ -45,8 +45,9 @@
     - [RNN](/doc/DeepLearning/DeepLearning-RNN)
 
 * **Pytorch**
-  - [Class1](/doc/Pytorch/class1)
-  - [Class2](/doc/Pytorch/class2)
+  - [Pytorch基础](/doc/Pytorch/class1)
+  - [模型训练](/doc/Pytorch/class2)
+  - [一些Tricks](/doc/Pytorch/class3)
 
 * **PythonTricks**
   - [Tricks](/doc/PythonTricks/Python_tricks)
