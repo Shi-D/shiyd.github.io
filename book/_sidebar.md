@@ -1,5 +1,5 @@
 * **JavaScript**
-    
+  
     * [ajax](/doc/JavaScript/JavaScript-ajax)
     * [new一个对象发生了什么](/doc/JavaScript/JavaScript-new一个对象发生了什么)
     * [this指向问题](/doc/JavaScript/JavaScript-this指向问题)
@@ -38,18 +38,23 @@
     * [双向绑定](/doc/VUE/双向绑定)
 
 * **DeepLearning**
-    
+  
     * [Basics](/doc/DeepLearning/DeepLearning-Basics)
     * [Shallow neural networks ](/doc/DeepLearning/DeepLearning-Shallow_neural_networks)
     * [CNN](/doc/DeepLearning/DeepLearning-CNN)
     
     - [RNN](/doc/DeepLearning/DeepLearning-RNN)
-
+- [注意力机制](/doc/DeepLearning/DeepLearning-Attention)
+  
+  - [生成学习算法](/doc/DeepLearning/DeepLearning-Generative_Learning_Algorithms)
+  
 * **Pytorch**
+  
   - [Pytorch基础](/doc/Pytorch/class1)
   - [模型训练](/doc/Pytorch/class2)
-  - [一些Tricks](/doc/Pytorch/class3)
-
+- [一些Tricks](/doc/Pytorch/class3)
+  
 * **PythonTricks**
+  
   - [Tricks](/doc/PythonTricks/Python-tricks)
 
