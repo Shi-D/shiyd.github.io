@@ -44,9 +44,9 @@
     * [CNN](/doc/DeepLearning/DeepLearning-CNN)
     
     - [RNN](/doc/DeepLearning/DeepLearning-RNN)
-- [注意力机制](/doc/DeepLearning/DeepLearning-Attention)
-  
+
   - [生成学习算法](/doc/DeepLearning/DeepLearning-Generative_Learning_Algorithms)
+  - [注意力机制](/doc/DeepLearning/DeepLearning-Attention)
   
 * **Pytorch**
 
