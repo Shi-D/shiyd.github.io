@@ -49,11 +49,11 @@
   - [生成学习算法](/doc/DeepLearning/DeepLearning-Generative_Learning_Algorithms)
   
 * **Pytorch**
-  
+
   - [Pytorch基础](/doc/Pytorch/class1)
   - [模型训练](/doc/Pytorch/class2)
-- [一些Tricks](/doc/Pytorch/class3)
-  
+  - [一些Tricks](/doc/Pytorch/class3)
+
 * **PythonTricks**
   
   - [Tricks](/doc/PythonTricks/Python-tricks)
