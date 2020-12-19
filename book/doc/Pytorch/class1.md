@@ -276,7 +276,7 @@ if torch.cuda.is_available():
     print(z.to("cpu", torch.double))       # ``.to`` can also change dtype together!
 ```
 
-## 热身: 用numpy实现两层神经网络
+## 练习: 用numpy实现两层神经网络
 
 一个全连接ReLU神经网络，一个隐藏层，没有bias。用来从x预测y，使用L2 Loss。
 
