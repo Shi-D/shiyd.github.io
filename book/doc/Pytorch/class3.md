@@ -8,7 +8,7 @@
 
 计算矩阵的迹（对角线元素和）
 
-```
+```python
 In [22]: import torch as t
 
 In [23]: a = t.arange(1, 10).view(3,3)
@@ -29,7 +29,7 @@ Out[25]: tensor(15)
 
 获取对角阵
 
-```
+```python
 In [24]: a
 Out[24]: 
 tensor([[1, 2, 3],
@@ -52,7 +52,7 @@ Out[28]: tensor([3])
 
 矩阵转置
 
-```
+```python
 In [24]: a
 Out[24]: 
 tensor([[1, 2, 3],
@@ -74,7 +74,7 @@ In [31]:
 
 可逆矩阵求逆
 
-```
+```python
 In [37]: z = t.Tensor([[0,1,2], [1,1,4],[2,-1,0]])
 
 In [38]: z
@@ -101,7 +101,7 @@ In [40]:
 
 `torch.tril`下三角矩阵
 
-```
+```python
 In [40]: a
 Out[40]: 
 tensor([[1, 2, 3],
@@ -119,7 +119,7 @@ tensor([[1, 2, 3],
 
 ### 6 torch.mm
 
-```
+```python
 In [46]: a = t.arange(1, 5).view(2,2)
 
 In [47]: a
@@ -150,7 +150,7 @@ In [51]:
 
 **注意区别numpy里的dot，numpy里的dot是矩阵乘法。**
 
-```
+```python
 In [62]: torch.dot(torch.tensor([2, 3]), torch.tensor([2, 1]))
 Out[62]: tensor(7)
 
@@ -163,5 +163,16 @@ In [57]: b
 Out[57]: 
 tensor([[2, 3],
         [4, 5]])
+```
+
+
+
+## 其他
+
+tendor转numpy
+
+```python
+test_y = torch.Tensor([1, 2, 3])
+test_y = test_y.detach().numpy()
 ```
 

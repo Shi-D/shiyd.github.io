@@ -198,7 +198,7 @@ plt.show()
 
 Loss 
 
-```
+```python
 epoch 0 iteration 0 loss 1728.7784423828125
 epoch 0 iteration 200 loss 0.5566979646682739
 epoch 0 iteration 400 loss 0.28769049048423767

@@ -13,7 +13,7 @@ Tensor类似与NumPy的ndarray，唯一的区别是Tensor可以在GPU上加速�
 
 In [1]:
 
-```
+```python
 from __future__ import print_function
 import torch
 ```
@@ -22,7 +22,7 @@ import torch
 
 In [2]:
 
-```
+```python
 x = torch.empty(5, 3)
 print(x)
 tensor([[0.0000e+00, 0.0000e+00, 0.0000e+00],
@@ -36,7 +36,7 @@ tensor([[0.0000e+00, 0.0000e+00, 0.0000e+00],
 
 In [3]:
 
-```
+```python
 x = torch.rand(5, 3)
 print(x)
 tensor([[0.4821, 0.3854, 0.8517],
@@ -50,7 +50,7 @@ tensor([[0.4821, 0.3854, 0.8517],
 
 In [4]:
 
-```
+```python
 x = torch.zeros(5, 3, dtype=torch.long)
 print(x)
 tensor([[0, 0, 0],
@@ -64,7 +64,7 @@ tensor([[0, 0, 0],
 
 In [5]:
 
-```
+```python
 x = torch.tensor([5.5, 3])
 print(x)
 tensor([5.5000, 3.0000])
@@ -74,7 +74,7 @@ tensor([5.5000, 3.0000])
 
 In [6]:
 
-```
+```python
 x = x.new_ones(5, 3, dtype=torch.double)      # new_* methods take in sizes
 print(x)
 
@@ -96,7 +96,7 @@ tensor([[ 1.4793, -2.4772,  0.9738],
 
 In [7]:
 
-```
+```python
 print(x.size())
 torch.Size([5, 3])
 ```
@@ -111,7 +111,7 @@ Operations
 
 In [8]:
 
-```
+```python
 y = torch.rand(5, 3)
 print(x + y)
 tensor([[ 1.7113, -1.5490,  1.4009],
@@ -125,7 +125,7 @@ tensor([[ 1.7113, -1.5490,  1.4009],
 
 In [9]:
 
-```
+```python
 print(torch.add(x, y))
 tensor([[ 1.7113, -1.5490,  1.4009],
         [ 2.4590,  1.6504,  2.6889],
@@ -138,7 +138,7 @@ tensor([[ 1.7113, -1.5490,  1.4009],
 
 In [10]:
 
-```
+```python
 result = torch.empty(5, 3)
 torch.add(x, y, out=result)
 print(result)
@@ -153,7 +153,7 @@ in-place加法
 
 In [11]:
 
-```
+```python
 # adds x to y
 y.add_(x)
 print(y)
@@ -172,7 +172,7 @@ tensor([[ 1.7113, -1.5490,  1.4009],
 
 In [12]:
 
-```
+```python
 print(x[:, 1])
 tensor([-2.4772,  1.3981, -0.0291, -0.7352, -0.5149])
 ```
@@ -181,7 +181,7 @@ Resizing: 如果你希望resize/reshape一个tensor，可以使用`torch.view`�
 
 In [13]:
 
-```
+```python
 x = torch.randn(4, 4)
 y = x.view(16)
 z = x.view(-1, 8)  # the size -1 is inferred from other dimensions
@@ -193,7 +193,7 @@ torch.Size([4, 4]) torch.Size([16]) torch.Size([2, 8])
 
 In [14]:
 
-```
+```python
 x = torch.randn(1)
 print(x)
 print(x.item())
@@ -215,7 +215,7 @@ Torch Tensor和NumPy array会共享内存，所以改变其中一项也会改变
 
 In [15]:
 
-```
+```python
 a = torch.ones(5)
 print(a)
 tensor([1., 1., 1., 1., 1.])
@@ -223,7 +223,7 @@ tensor([1., 1., 1., 1., 1.])
 
 In [16]:
 
-```
+```python
 b = a.numpy()
 print(b)
 [1. 1. 1. 1. 1.]
@@ -233,7 +233,7 @@ print(b)
 
 In [17]:
 
-```
+```python
 a.add_(1)
 print(a)
 print(b)
@@ -245,7 +245,7 @@ tensor([2., 2., 2., 2., 2.])
 
 In [18]:
 
-```
+```python
 import numpy as np
 a = np.ones(5)
 b = torch.from_numpy(a)
@@ -264,7 +264,7 @@ tensor([2., 2., 2., 2., 2.], dtype=torch.float64)
 
 In [19]:
 
-```
+```python
 # let us run this cell only if CUDA is available
 # We will use ``torch.device`` objects to move tensors in and out of GPU
 if torch.cuda.is_available():
@@ -286,7 +286,7 @@ numpy ndarray是一个普通的n维array。它不知道任何关于深度学习�
 
 In [20]:
 
-```
+```python
 import numpy as np
 
 # N is batch size; D_in is input dimension;
@@ -336,7 +336,7 @@ for t in range(500):
 
 In [21]:
 
-```
+```python
 import torch
 
 
@@ -385,7 +385,7 @@ for t in range(500):
 
 In [22]:
 
-```
+```python
 # Create tensors.
 x = torch.tensor(1., requires_grad=True)
 w = torch.tensor(2., requires_grad=True)
@@ -414,7 +414,7 @@ PyTorch的一个重要功能就是autograd，也就是说只要定义了forward 
 
 In [23]:
 
-```
+```python
 import torch
 
 dtype = torch.float
@@ -473,7 +473,7 @@ for t in range(500):
 
 In [24]:
 
-```
+```python
 import torch
 
 # N is batch size; D_in is input dimension;
@@ -534,7 +534,7 @@ for t in range(500):
 
 In [25]:
 
-```
+```python
 import torch
 # N is batch size; D_in is input dimension;
 # H is hidden dimension; D_out is output dimension.
@@ -588,7 +588,7 @@ for t in range(500):
 
 In [26]:
 
-```
+```python
 import torch
 
 
@@ -651,7 +651,7 @@ FizzBuzz是一个简单的小游戏。游戏规则如下：从1开始往上数�
 
 In [27]:
 
-```
+```python
 # One-hot encode the desired outputs: [number, "fizz", "buzz", "fizzbuzz"]
 def fizz_buzz_encode(i):
     if   i % 15 == 0: return 3
@@ -678,7 +678,7 @@ fizzbuzz
 
 In [28]:
 
-```
+```python
 import numpy as np
 import torch
 
@@ -696,7 +696,7 @@ trY = torch.LongTensor([fizz_buzz_encode(i) for i in range(101, 2 ** NUM_DIGITS)
 
 In [29]:
 
-```
+```python
 # Define the model
 NUM_HIDDEN = 100
 model = torch.nn.Sequential(
@@ -714,7 +714,7 @@ model = torch.nn.Sequential(
 
 In [30]:
 
-```
+```python
 loss_fn = torch.nn.CrossEntropyLoss()
 optimizer = torch.optim.SGD(model.parameters(), lr = 0.05)
 ```
@@ -723,7 +723,7 @@ optimizer = torch.optim.SGD(model.parameters(), lr = 0.05)
 
 In [31]:
 
-```
+```python
 # Start training it
 BATCH_SIZE = 128
 for epoch in range(10000):
@@ -748,7 +748,7 @@ for epoch in range(10000):
 
 In [ ]:
 
-```
+```python
 # Output now
 testX = torch.Tensor([binary_encode(i, NUM_DIGITS) for i in range(1, 101)])
 with torch.no_grad():
@@ -760,7 +760,7 @@ print([fizz_buzz_decode(i, x) for (i, x) in predictions])
 
 In [ ]:
 
-```
+```python
 print(np.sum(testY.max(1)[1].numpy() == np.array([fizz_buzz_encode(i) for i in range(1,101)])))
 testY.max(1)[1].numpy() == np.array([fizz_buzz_encode(i) for i in range(1,101)])
 ```
