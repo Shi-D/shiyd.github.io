@@ -97,4 +97,4 @@ n维的**多元正态分布（多元高斯分布）**，由参数均值向量μ�
 
 *Coursera：https://www.coursera.org/learn/machine-learning/home/welcome
 
-*网易云课堂：https://study.163.com/course/courseMain.htm?courseId=1210076550
+*课程官网：http://cs229.stanford.edu/
