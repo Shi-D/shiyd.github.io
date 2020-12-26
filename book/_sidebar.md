@@ -58,3 +58,7 @@
   
   - [Tricks](/doc/PythonTricks/Python-tricks)
 
+* LiteratureLearning
+  - [Tricks](/doc/LiteratureLearning/Tricks)
+
+
