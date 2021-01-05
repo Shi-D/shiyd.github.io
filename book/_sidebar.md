@@ -39,14 +39,15 @@
 
 * **DeepLearning**
   
-    * [Basics](/doc/DeepLearning/DeepLearning-Basics)
-    * [Shallow neural networks ](/doc/DeepLearning/DeepLearning-Shallow_neural_networks)
-    * [CNN](/doc/DeepLearning/DeepLearning-CNN)
+    * [Basics](/doc/MachineLearning/DeepLearning-Basics)
+    * [Shallow neural networks ](/doc/MachineLearning/DeepLearning-Shallow_neural_networks)
+    * [CNN](/doc/MachineLearning/DeepLearning-CNN)
     
-    - [RNN](/doc/DeepLearning/DeepLearning-RNN)
+    - [RNN](/doc/MachineLearning/DeepLearning-RNN)
 
-  - [生成学习算法](/doc/DeepLearning/DeepLearning-Generative_Learning_Algorithms)
-  - [注意力机制](/doc/DeepLearning/DeepLearning-Attention)
+  - [生成学习算法](/doc/MachineLearning/DeepLearning-Generative_Learning_Algorithms)
+  - [注意力机制](/doc/MachineLearning/DeepLearning-Attention)
+  - [主成成分分析](/doc/MachineLearning/PCA)
   
 * **Pytorch**
 
@@ -58,7 +59,7 @@
   
   - [Tricks](/doc/PythonTricks/Python-tricks)
 
-* LiteratureLearning
-  - [Tricks](/doc/LiteratureLearning/Tricks)
+* **LiteratureLearning**
+  - [Tricks](/doc/LiteratureLeaning/Tricks)
 
 
