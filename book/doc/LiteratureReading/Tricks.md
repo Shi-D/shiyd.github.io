@@ -42,3 +42,17 @@ PTAS指近似算法。
 
 (5)用启发式方法求解
 
+
+
+## 隐马尔可夫模型HMM
+
+https://www.cnblogs.com/skyme/p/4651331.html
+
+**Viterbi算法**
+
+
+
+## 马尔可夫决策过程MDP
+
+
+
