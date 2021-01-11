@@ -61,6 +61,6 @@
 
 * **LiteratureLearning**
   
-  - [预备知识](/doc/LiteratureLeaning/preknowledge)
+  - [预备知识](/doc/LiteratureLearning/preknowledge)
 
 
