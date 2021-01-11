@@ -37,7 +37,7 @@
     * [生命周期](/doc/VUE/生命周期)
     * [双向绑定](/doc/VUE/双向绑定)
 
-* **DeepLearning**
+* **MachineLearning**
   
     * [Basics](/doc/MachineLearning/DeepLearning-Basics)
     * [Shallow neural networks ](/doc/MachineLearning/DeepLearning-Shallow_neural_networks)
@@ -60,6 +60,7 @@
   - [Tricks](/doc/PythonTricks/Python-tricks)
 
 * **LiteratureLearning**
-  - [Tricks](/doc/LiteratureLeaning/Tricks)
+  
+  - [预备知识](/doc/LiteratureLeaning/preknowledge)
 
 
