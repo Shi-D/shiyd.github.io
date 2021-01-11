@@ -59,8 +59,8 @@
   
   - [Tricks](/doc/PythonTricks/Python-tricks)
 
-* **LiteratureLearning**
+* **LiteratureReading**
   
-  - [预备知识](/doc/LiteratureLearning/preknowledge)
+  - [预备知识](/doc/LiteratureReading/preknowledge)
 
 
