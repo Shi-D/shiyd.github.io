@@ -6,7 +6,7 @@
 
 #### **edge detection**
 
-<img src="/book/doc/DeepLearning/resources/4.png" alt="4" style="zoom:50%;" />
+<img src="/gitbook/doc/DeepLearning/resources/4.png" alt="4" style="zoom:50%;" />
 
 #### **Padding**
 
@@ -53,17 +53,17 @@ s表示卷积步长，则若使用Same Convolutions，输出为 `(n+2p-f)/s+1`
 
 **LeNet-5**
 
-<img src="/book/doc/DeepLearning/resources/LeNet-5.png" alt="LeNet-5" style="zoom:60%;" />
+<img src="/gitbook/doc/DeepLearning/resources/LeNet-5.png" alt="LeNet-5" style="zoom:60%;" />
 
 **AlexNet**
 
-<img src="/book/doc/DeepLearning/resources/AlexNet.png" alt="AlexNet" style="zoom:60%;"/>
+<img src="/gitbook/doc/DeepLearning/resources/AlexNet.png" alt="AlexNet" style="zoom:60%;"/>
 
 **VGG-16**
 
 包含16个卷积层和全连接层
 
-<img src="/book/doc/DeepLearning/resources/VGG-16.png" alt="VGG-16" style="zoom:60%;"/>
+<img src="/gitbook/doc/DeepLearning/resources/VGG-16.png" alt="VGG-16" style="zoom:60%;"/>
 
 #### ResNets(残差网络)
 
@@ -71,7 +71,7 @@ s表示卷积步长，则若使用Same Convolutions，输出为 `(n+2p-f)/s+1`
 
 残差网络为图中紫色path（正常主路径为绿色path），在Relu非线性激活前加上a[l]， a[l]的信息直接到达神经网络的深层，不再沿着主路径传递.
 
-<img src="/book/doc/DeepLearning/resources/ResidualBlock.png" alt="ResidualBlock" style="zoom:60%;"/>
+<img src="/gitbook/doc/DeepLearning/resources/ResidualBlock.png" alt="ResidualBlock" style="zoom:60%;"/>
 
 残差块能训练更深的神经网络. 所以构建一个ResNet网络就是通过将很多残差块堆积在一起，形成一个深度神经网络.
 
@@ -87,15 +87,15 @@ s表示卷积步长，则若使用Same Convolutions，输出为 `(n+2p-f)/s+1`
 
 **One by One Conv(Network in Network)**
 
-<img src="/book/doc/DeepLearning/resources/onebyone.png" alt="onebyone" style="zoom:40%;"/>
+<img src="/gitbook/doc/DeepLearning/resources/onebyone.png" alt="onebyone" style="zoom:40%;"/>
 
 **Inception Module**
 
-<img src="/book/doc/DeepLearning/resources/inception_module.PNG" alt="Inception_Module" style="zoom:25%;"/>
+<img src="/gitbook/doc/DeepLearning/resources/inception_module.PNG" alt="Inception_Module" style="zoom:25%;"/>
 
 **Inception Network**
 
-<img src="/book/doc/DeepLearning/resources/inception_network.PNG" alt="Inception_Network" style="zoom:40%;"/>
+<img src="/gitbook/doc/DeepLearning/resources/inception_network.PNG" alt="Inception_Network" style="zoom:40%;"/>
 
 #### 迁移学习
 
@@ -107,7 +107,7 @@ s表示卷积步长，则若使用Same Convolutions，输出为 `(n+2p-f)/s+1`
 
 通过使用其他人预训练的权重，即使只有一个小的数据集，也有很大可能可以得到很好的性能。幸运的是，大多数深度学习框架都支持这种操作，事实上，取决于用的框架，它也许会有`trainableParameter=0`这样的参数，对于这些前面的层，可能会需要设置这个参数。为了不训练这些权重，有时也会有`freeze=1`这样的参数。不同的深度学习编程框架有不同的方式，允许你指定是否训练特定层的权重。在这个例子中，你只需要训练**softmax**层的权重，把前面这些层的权重都冻结即可。
 
-<img src="/book/doc/DeepLearning/resources/Transfer_Learning.png" alt="Transfer_Learning" style="zoom:35%;"/>
+<img src="/gitbook/doc/DeepLearning/resources/Transfer_Learning.png" alt="Transfer_Learning" style="zoom:35%;"/>
 
 另一个技巧，也许对一些情况有用，由于前面的层都冻结了，相当于一个固定的函数，不需要改变。因为你不需要改变它，也不训练它，取输入图像，然后把它映射到这层（**softmax**的前一层）的激活函数。所以这个能加速训练的技巧就是，如果我们先计算这一层（紫色箭头标记），计算特征或者激活值，然后把它们存到硬盘里。你所做的就是用这个固定的函数，在这个神经网络的前半部分（**softmax**层之前的所有层视为一个固定映射），取任意输入图像，然后计算它的某个特征向量，这样你训练的就是一个很浅的**softmax**模型，用这个特征向量来做预测。对你的计算有用的一步就是对你的训练集中所有样本的这一层的激活值进行预计算，然后存储到硬盘里，然后在此之上训练**softmax**分类器。所以，存储到硬盘或者说预计算方法的优点就是，你不需要每次遍历训练集再重新计算这个激活值了。
 
@@ -119,7 +119,7 @@ s表示卷积步长，则若使用Same Convolutions，输出为 `(n+2p-f)/s+1`
 
 * 随机裁剪
 
-  <img src="/book/doc/DeepLearning/resources/caijian.png" alt="随机裁剪" style="zoom:35%;"/>
+  <img src="/gitbook/doc/DeepLearning/resources/caijian.png" alt="随机裁剪" style="zoom:35%;"/>
 
   - 旋转
 
@@ -133,6 +133,6 @@ s表示卷积步长，则若使用Same Convolutions，输出为 `(n+2p-f)/s+1`
 
   在这个下图中，要给红色、蓝色通道加值，给绿色通道减值. 红色和蓝色会产生紫色，使整张图片看起来偏紫，这样训练集中就有失真的图片. 
 
-<img src="/book/doc/DeepLearning/resources/colorshifting.png" alt="colorshifting" style="zoom:35%;"/>
+<img src="/gitbook/doc/DeepLearning/resources/colorshifting.png" alt="colorshifting" style="zoom:35%;"/>
 
 数据扩充与训练深度神经网络的其他部分类似，在数据扩充过程中也有一些超参数，比如说颜色变化了多少，以及随机裁剪的时候使用的参数。
