@@ -76,9 +76,13 @@ $𝑘_{𝑖,𝑖𝑛}$是社区c内节点与节点i的边权重之和，注意�
 
 实验结果：
 
-![Figure_pylouvain](/Users/shiyingdan/Desktop/文献-周老师/month2week4/社区发现实验png/Figure_pylouvain.png)因为在真实数据集中节点量太大，因此我在16个节点的数据集中实验，可以看出Louvain算法社区检测结果还是可以的：
+<img src="https://shiy-d.github.io/ImageHost/Figure_pylouvain.png" alt="img"  />
 
-<img src="/Users/shiyingdan/Desktop/文献-周老师/month2week4/社区发现实验png/Figure_pylouvain2.png" alt="Figure_pylouvain2" style="zoom:36%;" />
+因为在真实数据集中节点量太大，因此我在16个节点的数据集中实验，可以看出Louvain算法社区检测结果还是可以的：
+
+<img src="https://shiy-d.github.io/ImageHost/Figure_pylouvain2.png" alt="img"  />
+
+
 
 
 
@@ -88,7 +92,7 @@ $𝑘_{𝑖,𝑖𝑛}$是社区c内节点与节点i的边权重之和，注意�
 
 实验结果：
 
-![Figure_nxlouvain](/Users/shiyingdan/Desktop/文献-周老师/month2week4/社区发现实验png/Figure_nxlouvain.png)
+<img src="https://shiy-d.github.io/ImageHost/Figure_nxlouvain.png" alt="img"  />
 
 > 学习参考：https://www.cnblogs.com/fengfenggirl/
 
