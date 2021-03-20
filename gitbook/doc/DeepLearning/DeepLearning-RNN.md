@@ -19,7 +19,7 @@
 
 This following figure shows the operations of an LSTM-cell.
 
-<img src="/book/doc/DeepLearning/resources/LSTM.png" alt="4" style="zoom:30%;" />
+<img src="/gitbook/doc/DeepLearning/resources/LSTM.png" alt="4" style="zoom:30%;" />
 
 LSTM-cell above. This tracks and updates a “cell state” or memory variable c^<t>^ at every time-step, which can be different from a^⟨t⟩^. Similar to the RNN example above, you will start by implementing the LSTM cell for a single time-step. Then you can iteratively call it from inside a for-loop to have it process an input with T~x~ time-steps.
 
@@ -27,9 +27,9 @@ LSTM-cell above. This tracks and updates a “cell state” or memory variable c
 
 ### About the gates
 
-<img src="/book/doc/DeepLearning/resources/lstm2.png" alt="4" style="zoom:20%;" />
+<img src="/gitbook/doc/DeepLearning/resources/lstm2.png" alt="4" style="zoom:20%;" />
 
-<img src="/book/doc/DeepLearning/resources/lstm1.png" alt="4" style="zoom:20%;" />
+<img src="/gitbook/doc/DeepLearning/resources/lstm1.png" alt="4" style="zoom:20%;" />
 
 
 
@@ -86,13 +86,13 @@ Where in equation 6 you decide what to output using a sigmoid function and in eq
 
 ### Forward pass for LSTM
 
-<img src="/book/doc/DeepLearning/resources/forwardpass.png" alt="forwardpass" style="zoom:50%;" />
+<img src="/gitbook/doc/DeepLearning/resources/forwardpass.png" alt="forwardpass" style="zoom:50%;" />
 
 
 
 ### Back Propagation
 
-<img src="/book/doc/DeepLearning/resources/backpropogation.png" alt="backpropogation" style="zoom:30%;" />
+<img src="/gitbook/doc/DeepLearning/resources/backpropogation.png" alt="backpropogation" style="zoom:30%;" />
 
 
 

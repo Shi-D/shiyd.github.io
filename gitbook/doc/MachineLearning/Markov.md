@@ -1,3 +1,5 @@
+[TOC]
+
 # Markov
 
 ## 隐马尔可夫模型HMM
