@@ -102,7 +102,9 @@ Where in equation 6 you decide what to output using a sigmoid function and in eq
 
 
 
-*~~内联公式无法显示，正在解决中...~~      解决不了，GitHub不支持LaTex
+*~~内联公式无法显示，正在解决中...~~      
+
+*内联公式显示问题，添加chrome插件https://github.com/orsharir/github-mathjax
 
 *参考资料：https://www.deeplearning.ai/
 
