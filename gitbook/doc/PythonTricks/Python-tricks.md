@@ -147,6 +147,44 @@ most_common()将数量从大到小排
 Counter(flat_map).most_common()[0][0]
 ```
 
+
+
+## Random
+
+#### uniform
+
+numpy.random.uniform(low,high,size)
+
+从一个均匀分布[low,high)中随机采样，注意定义域是左闭右开，即包含low，不包含high。
+
+若不填写参数，则为随机生成0-1内的小数。
+
+#### randint
+
+numpy.random.randint(low, high=None, size=None, dtype='l')，产生随机整数；
+
+#### random_integers
+
+原型： numpy.random.random_integers(low, high=None, size=None)，在闭区间上产生随机整数；
+
+#### random_sample
+
+原型： numpy.random.random_sample(size=None)，在[0.0,1.0)上随机采样；
+
+#### random
+
+原型： numpy.random.random(size=None)，和random_sample一样，是random_sample的别名；
+
+#### rand
+
+原型： numpy.random.rand(d0, d1, ..., dn)，产生d0 - d1 - ... - dn形状的在[0,1)上均匀分布的float型数。
+
+#### randn
+
+原型：numpy.random.randn（d0,d1,...,dn)，产生d0 - d1 - ... - dn形状的标准正态分布的float型数。
+
+
+
 ## matplotlib绘图
 
 #### cmap取值
@@ -403,6 +441,8 @@ args = parse_args()
 print(args.nodes)
 ```
 
+
+
 ## 创建一个文件
 
 ```python
@@ -427,15 +467,16 @@ except Exception as e:
 ```python
 import time 
 import sys 
-for progress in range(100): 
-  time.sleep(0.1) 
-  sys.stdout.write("Download progress: %d%%   \r" % (progress) )  
-  sys.stdout.flush() 
+
+for progress in range(100):
+    sys.stdout.write("\r[%s%s%d%%]" % ("="*progress, " "*(100-progress), progress))
+    sys.stdout.flush()
+    time.sleep(0.1)
 ```
 
 还有一种方法
 
-
+用tqmd
 
 ## 其他
 

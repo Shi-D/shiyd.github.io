@@ -60,3 +60,9 @@ v(s) &=\mathbb{E}\left[G_{t} | S_{t}=s\right] \\
 &=\mathbb{E}\left[R_{t+1}+\gamma v\left(S_{t+1}\right) | S_{t}=s\right]
 \end{aligned}
 $$
+
+
+
+## 深度学习里的端到端
+
+端到端思想就是输入原始特征，输出预测结果，不需要像传统机器学习算法那样进行一系列的特征提取，暂时更新这么多。
